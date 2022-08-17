@@ -8,4 +8,6 @@ def selectionSort(L):
 
     return L
 
-print(selectionSort([1, 2, 45, 21, 34, 21]))
+
+if __name__ == '__main__':
+    print(selectionSort([1, 2, 45, 21, 34, 21]))

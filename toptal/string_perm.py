@@ -1,4 +1,4 @@
-def getMappings(a:str):
+def getMappings(a: str):
     counter = {}
     for i in a:
         counter.setdefault(i, 0)
@@ -6,7 +6,8 @@ def getMappings(a:str):
 
     return counter
 
-def checkStringPermutation(a:str, b:str) -> bool:
+
+def checkStringPermutation(a: str, b: str) -> bool:
     if len(a) > len(b):
         return False
     l, r = 0, len(a) - 1
@@ -19,5 +20,13 @@ def checkStringPermutation(a:str, b:str) -> bool:
     return False
 
 
-if __name__ == '__main__':
-    print(checkStringPermutation('ab', 'an'))
+def checkPermutationFaster(a: str, b: str):
+    counter = getMappings(a)
+    l, r = 0, len(a) - 1
+    temp_counter = {}
+    while r < len(b):
+        if(r < len(a)):
+            temp_counter.setdefault(b[r], 0)
+            temp_counter[b[r]] += 1
+        else:
+            pass
