@@ -36,7 +36,3 @@ def partition(nums : List, low : int, hi : int):
 
     nums[border], nums[low] = nums[low], nums[border]
     return border
-
-A = [1,5,3,5,6,3,2,1]
-quick_sort(A)
-print(A)
