@@ -16,4 +16,7 @@ def quick_sort(nums : List) -> List:
                 right.append(i)
         return quick_sort(left) + [pivot] + quick_sort(right)
 
-print(quick_sort([1,4,6,4,3,1,4,6,8,6,5,4,3,67,888,6]))
+
+if __name__ == '__main__':
+    # print()
+    pass

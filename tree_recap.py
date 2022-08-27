@@ -31,8 +31,9 @@ class BinaryTreeNode:
                 self.right.printinOOrder()
 
 
-head = BinaryTreeNode()
-head.addItem(20)
-head.addItem(12)
-head.printinOOrder()
-print()
+bt = BinaryTreeNode(10)
+bt.addItem(10)
+bt.addItem(300)
+bt.addItem(5)
+bt.addItem(0)
+bt.printinOOrder()

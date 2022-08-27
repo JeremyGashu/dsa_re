@@ -1,8 +1,3 @@
-from time import sleep
-from turtle import left
-from urllib.response import addinfo
-
-
 class BinaryTreeNode:
     def __init__(self, data=0, right=None, left=None):
         self.right = right
@@ -36,7 +31,16 @@ class BinaryTreeNode:
         if not (self.right and self.left):
             return False
         
-        # left, right = self.left, self.right
+        # left, r
+btn = BinaryTreeNode(10)
+btn.addInOrder(20)
+btn.addInOrder(34)
+btn.addInOrder(4)
+btn.addInOrder(0)
+btn.printInOrder()
+
+
+# print(btn.checkSymmetry())ight = self.left, self.right
         # while left and right:
         #     if(left.left.data != )
         # return True
@@ -51,7 +55,8 @@ btn = BinaryTreeNode(10)
 btn.addInOrder(20)
 btn.addInOrder(34)
 btn.addInOrder(4)
-btn.addInOrder(2)
+btn.addInOrder(0)
+btn.printInOrder()
 
 
-print(btn.checkSymmetry())
+# print(btn.checkSymmetry())
